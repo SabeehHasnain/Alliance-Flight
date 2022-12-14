@@ -1,0 +1,1380 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&family=DM+Sans:wght@400;500;700&family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&family=DM+Sans:wght@400;500;700&family=Montserrat:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    background-color: #fff;
+}
+
+/* Home Page Styling */
+.home-banner-section {
+    background-image: url("../images/hero_image.webp");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100% 103%;
+}
+
+.home-header {
+    padding: 0 50px;
+}
+
+.home-banner-section .container-fluid {
+    justify-content: space-between;
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-size: 1rem;
+    padding: 0 30px;
+    font-weight: 400;
+    line-height: 27px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.navbar-toggler-icon {
+    background-image: url("../images/icons8-menu-512.png");
+    width: 1.85em;
+    height: 1.85em;
+}
+
+.navbar-brand img {
+    width: 100%;
+}
+
+.banner-content {
+    height: 75vh;
+    padding: 0 50px;
+}
+
+.banner-content h1,
+h3,
+h4 {
+    color: #fff;
+}
+
+.banner-content h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 75px;
+}
+
+.banner-content h3 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: 10px;
+    line-height: 45px;
+}
+
+.banner-content h4 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+.contact-btn {
+    background-color: #033C56;
+    color: #fff;
+    padding: 10px 20px;
+    margin-left: 10px;
+    margin-top: 30px;
+    width:auto;
+}
+
+.contact-btn:hover {
+    background-color: #066D9D;
+    color: #fff;
+    transition: .5s all;
+}
+
+/* Flight Support Section Styling */
+.flight-support-section>.container-fluid {
+    background-image: url("../images/Group-43.webp");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 170px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 80px;
+}
+
+.flight-content {
+    padding-left: 50px;
+}
+
+.flight-content h6 {
+    font-size: 1.15rem;
+    color: #fff;
+}
+
+.flight-content p {
+    font-size: 1.75rem;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 45px;
+    font-weight: 400;
+}
+
+.flight-img img {
+    width: 100%;
+}
+
+/* Dublin Section Styling */
+.dublin-section {
+    background-color: #fff;
+    padding: 100px 50px;
+}
+
+.aircraft-img img {
+    width: 100%;
+}
+
+.dublin-content h3 {
+    color: #033C56;
+    font-size: 2rem;
+}
+
+.dublin-content ul {
+    padding-top: 30px;
+}
+
+.dublin-content ul li {
+    font-size: 1.1rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.dublin-content .contact-btn {
+    background-color: #033C56;
+    color: #fff;
+    padding: 10px 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.dublin-content .contact-btn:hover {
+    background-color: #066D9D;
+    color: #fff;
+    transition: .5s all;
+}
+
+/* Aviation Services Section Styling */
+.aviation-services-section>.container-fluid {
+    background-image: url("../images/TechnoHangar1420x840 (1).webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 50px;
+}
+
+.services-content h2 {
+    color: #fff;
+    font-size: 3.5rem;
+    font-weight: 500;
+    line-height: 61px;
+}
+
+.services-content p {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-weight: 300;
+    line-height: 27px;
+    padding-top: 30px;
+    font-size: 1.15rem;
+}
+
+button.accordian {
+    background-color: transparent;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    padding: 15px 20px;
+    font-size: 1.8rem;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s linear;
+}
+
+button.accordian:after {
+    font-family: FontAwesome;
+    content: "\2b";
+    font-family: "fontawesome";
+    font-size: 18px;
+    float: right;
+}
+
+button.accordian.is-open:after {
+    content: "\f068";
+    font-family: "fontawesome";
+}
+
+.accordian-content {
+    border-bottom: 1px solid #fff;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
+}
+
+.accordian-content p {
+    color: #fff;
+    font-size: 1.25rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Our Services Section Styling  */
+.our-services-section>.container-fluid {
+    padding: 0 50px;
+}
+
+.our-services-section {
+    background: rgba(3, 60, 86, 0.07);
+    padding: 30px 0;
+}
+
+.our-services-content h2 {
+    color: #033C56;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: -0.011em;
+}
+
+.our-services-content {
+    padding-right: 80px;
+}
+
+.our-services-content p {
+    font-size: 1.85rem;
+    color: #033C56;
+    line-height: 40px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.our-service-aircraft-img img {
+    width: 100%;
+    ;
+    max-width: 100%;
+    height: auto;
+}
+
+.our-service-aircraft-img {
+    justify-content: right;
+}
+
+/* Our Services Inner Section Styling  */
+
+.our-services-fbo-content button.accordian_00 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 150%;
+    color: #033C56;
+}
+
+.our-services-fbo-content .accordian-content {
+    border: 0;
+}
+
+.our-service-img {
+    text-align: center;
+}
+
+.our-service-img-left img.img-fluid {
+    width: 100%;
+}
+
+.our-services-inner-section .row {
+    padding: 50px 0;
+}
+
+button.accordian_00 {
+    background-color: transparent;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    font-size: 1.25rem;
+    color: #000;
+    cursor: pointer;
+    transition: background-color 0.2s linear;
+}
+
+button.accordian_00:after {
+    font-family: FontAwesome;
+    content: "\2b";
+    font-family: "fontawesome";
+    float: right;
+    color: #033C56;
+    font-weight: 900;
+    font-size: 1.35rem;
+}
+
+button.accordian_00.is-open:after {
+    content: "\f068";
+    font-family: "fontawesome";
+    color: #033C56;
+}
+
+.accordian-content-00 {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
+}
+
+.accordian-content-00 p {
+    color: #000;
+    font-size: 1.25rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Parking Slider Styling */
+.parking-slider-section {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.parking-slider-section h1 {
+    font-weight: 400;
+    line-height: 40px;
+    font-size: 2.25rem;
+    color: #033C56;
+}
+
+.parking-para p {
+    font-size: 1.15rem;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #b8b8b8;
+    height: 5px;
+}
+
+.carousel-indicators .active {
+    background-color: #033C56;
+}
+
+.carousal {
+    position: relative;
+}
+
+.carousel-indicators {
+    position: absolute;
+    top: 103%;
+}
+
+.carousel-item img {
+    border-radius: 30px;
+}
+
+/* Endorsement Section Styling */
+.endorsement-section>.container-fluid {
+    background-color: rgba(3, 60, 86, 0.07);
+    padding: 50px 50px;
+}
+
+.endorsement-tagline h3 {
+    color: #033C56;
+    font-weight: 400;
+    line-height: 45px;
+}
+
+.endorsement-img img {
+    width: 100%;
+}
+
+.endorsement-content-column {
+    padding-left: 125px;
+}
+
+.endorsement-title {
+    color: #033C56;
+    font-size: 3rem;
+}
+
+.card {
+    margin-top: 50px;
+    background-color: transparent;
+    border: none;
+}
+
+.card-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #033C56;
+}
+
+.card-text {
+    margin-top: 30px;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.card-image {
+    position: relative;
+}
+
+.card-image img {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+/* Footer Styling */
+footer.container-fluid {
+    background-color: #033C56;
+    padding: 50px 50px;
+}
+
+.listing {
+    margin-top: 50px;
+}
+
+.listing ul {
+    list-style: none;
+    padding-left: 15px;
+}
+
+.listing ul li,
+.listing-00 ul li {
+    font-size: 1.15rem;
+    color: #fff;
+    line-height: 2em;
+    font-weight: 300;
+}
+
+.listing ul li a {
+    text-decoration: none;
+    color: #fff;
+    line-height: 2.5em;
+}
+
+.column-title h3 {
+    margin-top: 20px;
+    font-weight: 400;
+}
+
+.listing-00 {
+    padding-top: 70px;
+}
+
+.listing-00 ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.listing-00 ul li button {
+    font-size: 1.15rem;
+    padding: 5px 0px;
+}
+
+.listing-00 ul li>.accordian-content {
+    border: none;
+    padding: 0px;
+}
+
+.listing-00 ul li>.accordian-content>ul>li {
+    font-size: 0.85rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.listing-00 ul li>.accordian-content>ul>li>a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer>.row>h5 {
+    font-size: 0.95rem;
+    color: #fff;
+    font-weight: 300;
+}
+
+footer>.row>.col-lg-4 {
+    padding-right: 75px;
+    padding-left: 15px;
+}
+
+
+
+/*-------------------- About Page Start Here --------------------*/
+
+.about-banner-section{
+    background-image: url("../images/hero_image.webp");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100% 103%;
+}
+.about-banner-section .banner-content h4{
+    margin-top: 30px;
+}
+
+.mission-content h3{
+    color: #033C56;
+    font-size: 2rem;
+    padding-bottom: 20px;
+}
+.mission-content p{
+    font-size: 1.15rem;
+    color: #033C56;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+.team-section {
+    background-color: #fff;
+    padding: 100px 50px;
+}
+.team-section h1 {
+    color: #033C56;
+    font-size: 3rem;
+}
+.clean-card {
+    box-shadow: 0px 2px 10px rgb(0 0 0 / 8%);
+    border-radius: 3px;
+    border: 1px solid #eaeaea;
+}
+/*-------------------- About Page End Here --------------------*/
+
+
+
+
+/*-------------------- CARBON OFFSETS Page Start Here --------------------*/
+.carbon-banner-section{
+    background-image: url("../images/hero_image.webp");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100% 103%;
+}
+.carbon-banner-section .banner-content h4 {
+    margin-top: 30px;
+}
+.commitmnet-content h3 {
+    color: #033C56;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: -0.011em;
+}
+.our-services-content p {
+    font-size: 1.3rem;
+    color: #033C56;
+    line-height: 40px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+.gse-energies-content h2 {
+    color: #033C56;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: -0.011em;
+}
+.gse-energies-content p {
+    font-size: 1.3rem;
+    color: #033C56;
+    line-height: 40px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+/*-------------------- CARBON OFFSETS Page End Here --------------------*/
+
+/*-------------------- FBO's Page Start Here --------------------*/
+
+h1.main-heading {
+    width: 51%;
+}
+h4.main-para {
+    width: 50%;
+}
+
+
+/*-------------------- FBO's Page End Here --------------------*/
+
+
+
+/* Media Queries */
+@media only screen and (min-width: 1000px) and (max-width: 1200px) {
+    .home-banner-section {
+        height: 80vh;
+    }
+
+    .home-header {
+        padding: 0 25px;
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        font-size: 0.85rem;
+        padding: 0 15px;
+    }
+
+    .banner-content {
+        height: 55vh;
+    }
+
+    .banner-content h1 {
+        font-size: 3.5rem;
+        line-height: 40px;
+    }
+
+    .banner-content h3 {
+        font-size: 1.45rem;
+        line-height: 35px;
+    }
+
+    .banner-content h4 {
+        font-size: 1rem;
+        line-height: 17px;
+    }
+
+    .banner-content button {
+        margin-top: 20px;
+    }
+
+    /* Flight Support Section Styling */
+    .flight-content p {
+        font-size: 1.25rem;
+        line-height: 35px;
+    }
+
+    /* Dublin Section Styling */
+    .dublin-content h3 {
+        font-size: 1.25rem;
+    }
+
+    .dublin-content ul {
+        padding-top: 15px;
+    }
+
+    .dublin-content ul li {
+        font-size: 0.9rem;
+    }
+
+    /* Aviation Services Section Styling */
+    .services-content h2 {
+        font-size: 2.5rem;
+        line-height: 51px;
+    }
+
+    .services-content p {
+        font-size: 1.05rem;
+    }
+
+    button.accordian {
+        font-size: 1.35rem;
+    }
+
+    .accordian-content p {
+        font-size: 1.05rem;
+    }
+
+    /* Our Services Section Styling  */
+    .our-services-content p {
+        font-size: 1.25rem;
+        line-height: 30px;
+    }
+
+    .our-services-fbo-content h4 {
+        font-size: 1.3rem;
+    }
+
+    button.accordian_00 {
+        font-size: 1.05rem;
+    }
+
+    .accordian-content-00 p {
+        font-size: 1.05rem;
+    }
+
+    /* Parking Slider Styling */
+    .parking-slider-section h1 {
+        font-size: 2rem;
+        line-height: 40px;
+    }
+
+    .parking-para p {
+        font-size: 1.05rem;
+    }
+
+    /* Endorsement Section Styling */
+    .endorsement-tagline h3 {
+        font-size: 1.25rem;
+        line-height: 35px;
+    }
+
+    .endorsement-content-column {
+        padding-left: 60px;
+    }
+
+    .endorsement-title {
+        font-size: 2.5rem;
+    }
+
+    .card {
+        margin-top: 20px;
+    }
+
+    /* Footer Styling */
+    .column-title h3 {
+        font-size: 1.25rem;
+    }
+
+    .listing {
+        margin-top: 20px;
+    }
+
+    .listing-00 {
+        padding-top: 40px;
+    }
+
+    .listing ul li,
+    .listing-00 ul li {
+        font-size: 1rem;
+    }
+
+    .listing-00 ul li button {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 990px) {
+    .home-banner-section {
+        height: 75vh;
+    }
+
+    .home-header {
+        padding: 0 20px;
+    }
+
+    .banner-content {
+        padding: 0 40px;
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        font-size: 0.85rem;
+        padding: 0 20px;
+    }
+
+    .banner-content {
+        height: 60vh;
+    }
+
+    .banner-content h1 {
+        font-size: 3.5rem;
+        line-height: 50px;
+    }
+
+    .banner-content h3 {
+        font-size: 1.45rem;
+        line-height: 35px;
+    }
+
+    .banner-content h4 {
+        font-size: 1rem;
+        line-height: 17px;
+    }
+
+    .banner-content button {
+        margin-top: 20px;
+    }
+
+    /* Flight Support Section Styling */
+    .flight-support-section>.container-fluid>.row {
+        flex-direction: column-reverse;
+    }
+
+    .flight-content {
+        padding: 20px 40px;
+    }
+
+    .flight-content p {
+        font-size: 1.15rem;
+        line-height: 35px;
+    }
+
+    /* Dublin Section Styling */
+    .dublin-section {
+        padding: 50px 20px;
+    }
+
+    .aircraft-img {
+        justify-content: center;
+    }
+
+    .dublin-content {
+        padding-top: 30px;
+    }
+
+    /* Aviation Services Section Styling */
+    .aviation-services-section>.container-fluid {
+        padding: 50px 40px;
+    }
+
+    .services-content h2 {
+        font-size: 2.5rem;
+        line-height: 51px;
+    }
+
+    .services-content p {
+        font-size: 1.05rem;
+    }
+
+    button.accordian {
+        font-size: 1.35rem;
+    }
+
+    .accordian-content p {
+        font-size: 1.05rem;
+    }
+
+    /* Our Services Section Styling  */
+    .our-services-section>.container-fluid {
+        padding: 50px 40px;
+    }
+
+    .our-services-content p {
+        font-size: 1.25rem;
+        line-height: 30px;
+    }
+
+    .our-services-fbo-content h4 {
+        font-size: 1.3rem;
+    }
+
+    button.accordian_00 {
+        font-size: 1rem;
+    }
+
+    .accordian-content-00 p {
+        font-size: 1rem;
+    }
+
+    /* Parking Section Styling */
+    .parking-slider-section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .parking-slider-section h1 {
+        font-size: 2rem;
+        line-height: 35px;
+    }
+
+    .parking-para p {
+        font-size: 1.05rem;
+    }
+
+    /* Endorsement Section Styling */
+    .endorsement-section>.container-fluid {
+        padding: 50px 20px;
+    }
+
+    .endorsement-tagline h3 {
+        font-size: 1.25rem;
+        line-height: 35px;
+    }
+
+    .endorsement-content-column {
+        padding-left: calc(var(--bs-gutter-x) * .5);
+    }
+
+    .endorsement-title {
+        padding-top: 30px;
+        font-size: 2.5rem;
+    }
+
+    .card {
+        margin-top: 20px;
+    }
+
+    /* Footer Styling */
+    footer.container-fluid {
+        padding: 50px 20px;
+    }
+
+    .column-title h3 {
+        font-size: 1.5rem;
+        padding-left: 15px;
+    }
+
+    .listing {
+        margin-top: 20px;
+    }
+
+    .listing-00 {
+        padding-top: 50px;
+        padding-left: 15px;
+    }
+
+    .listing ul li,
+    .listing-00 ul li {
+        font-size: 1rem;
+    }
+
+    .listing-00 ul li button {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .home-banner-section {
+        height: 60vh;
+    }
+
+    .home-header {
+        padding: 0 20px;
+    }
+
+    .banner-content {
+        padding: 0 40px;
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        font-size: 0.85rem;
+        padding: 0 20px;
+    }
+
+    .banner-content {
+        height: 50vh;
+    }
+
+    .banner-content h1 {
+        font-size: 2.55rem;
+        line-height: 35px;
+    }
+
+    .banner-content h3 {
+        font-size: 1.15rem;
+        line-height: 25px;
+    }
+
+    .banner-content h4 {
+        font-size: 1rem;
+        line-height: 17px;
+    }
+
+    .banner-content button {
+        margin-top: 10px;
+        padding: 10px 15px;
+    }
+
+    /* Flight Support Section Styling */
+    .flight-support-section>.container-fluid>.row {
+        flex-direction: column-reverse;
+    }
+
+    .flight-content {
+        padding: 20px 40px;
+    }
+
+    .flight-content p {
+        font-size: 1.15rem;
+        line-height: 35px;
+    }
+
+    /* Dublin Section Styling */
+    .dublin-section {
+        padding: 50px 20px;
+    }
+
+    .aircraft-img {
+        justify-content: center;
+    }
+
+    .dublin-content {
+        padding-top: 30px;
+    }
+
+    .dublin-content h3 {
+        font-size: 1.3rem;
+    }
+
+    .dublin-content ul {
+        padding-top: 15px;
+    }
+
+    .dublin-content ul li {
+        font-size: 1rem;
+    }
+
+    /* Aviation Services Section Styling */
+    .aviation-services-section>.container-fluid {
+        padding: 50px 20px;
+    }
+
+    .services-content h2 {
+        font-size: 2.5rem;
+        line-height: 51px;
+    }
+
+    .services-content p {
+        font-size: 1.05rem;
+    }
+
+    button.accordian {
+        font-size: 1.35rem;
+    }
+
+    .accordian-content p {
+        font-size: 1.05rem;
+    }
+
+    /* Our Services Section Styling  */
+    .our-services-section>.container-fluid {
+        padding: 50px 20px;
+    }
+
+    .our-services-content p {
+        font-size: 1.05rem;
+        line-height: 25px;
+    }
+
+    .our-services-fbo-content h4 {
+        font-size: 1.3rem;
+    }
+
+    button.accordian_00 {
+        font-size: 1rem;
+    }
+
+    .accordian-content-00 p {
+        font-size: 1rem;
+    }
+
+    /* Parking Section Styling */
+    .parking-slider-section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .parking-slider-section h1 {
+        font-size: 1.65rem;
+        line-height: 35px;
+    }
+
+    .parking-para p {
+        font-size: 1rem;
+    }
+
+    /* Endorsement Section Styling */
+    .endorsement-section>.container-fluid {
+        padding: 50px 20px;
+    }
+
+    .endorsement-tagline h3 {
+        font-size: 1.25rem;
+        line-height: 35px;
+    }
+
+    .endorsement-content-column {
+        padding-left: calc(var(--bs-gutter-x) * .5);
+    }
+
+    .endorsement-title {
+        padding-top: 30px;
+        font-size: 2.5rem;
+    }
+
+    .card {
+        margin-top: 20px;
+    }
+
+    /* Footer Styling */
+    footer.container-fluid {
+        padding: 50px 20px;
+    }
+
+    .column-title h3 {
+        font-size: 1.5rem;
+        padding-left: 15px;
+    }
+
+    .listing {
+        margin-top: 20px;
+    }
+
+    .listing-00 {
+        padding-top: 50px;
+        padding-left: 15px;
+    }
+
+    .listing ul li,
+    .listing-00 ul li {
+        font-size: 1rem;
+    }
+
+    .listing-00 ul li button {
+        font-size: 1rem;
+    }
+
+    /*NCC Management Page*/
+    h1.main-heading {
+        width: 100%;
+    }
+    h4.main-para {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .home-banner-section {
+        height: 60vh;
+        background-size: 100vh;
+    }
+
+    .home-header {
+        padding: 0 0px;
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        font-size: 0.85rem;
+        padding: 0 20px;
+    }
+
+    .nav-container {
+        --bs-gutter-x: 0 !important;
+    }
+
+    .navbar-brand {
+        margin-right: 0px;
+    }
+
+    .banner-content {
+        height: 40vh;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .banner-content h1 {
+        font-size: 2.25rem;
+        line-height: 30px;
+    }
+
+    .banner-content h3 {
+        font-size: 1.025rem;
+        line-height: 25px;
+    }
+
+    .banner-content h4 {
+        font-size: 1rem;
+        line-height: 17px;
+    }
+
+    .banner-content button {
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px 15px;
+    }
+
+    /* Flight Support Section Styling */
+    .flight-support-section>.container-fluid>.row {
+        flex-direction: column-reverse;
+    }
+
+    .flight-content {
+        padding: 10px 20px;
+        text-align: center;
+    }
+
+    .flight-content p {
+        font-size: 1rem;
+        line-height: 25px;
+    }
+
+    /* Dublin Section Styling */
+    .dublin-section {
+        padding: 50px 20px;
+    }
+
+    .aircraft-img {
+        justify-content: center;
+    }
+
+    .dublin-content {
+        padding-top: 30px;
+    }
+
+    .dublin-content h3 {
+        font-size: 1.15rem;
+    }
+
+    .dublin-content ul {
+        padding-top: 15px;
+    }
+
+    .dublin-content ul li {
+        font-size: 1rem;
+    }
+
+    .dublin-content button {
+        padding: 10px 15px;
+    }
+
+    /* Aviation Services Section Styling */
+    .aviation-services-section>.container-fluid {
+        padding: 50px 20px;
+    }
+
+    .services-content h2 {
+        font-size: 2rem;
+        line-height: 41px;
+    }
+
+    .services-content p {
+        font-size: 1.05rem;
+    }
+
+    button.accordian {
+        font-size: 1.15rem;
+        padding: 15px 0px;
+    }
+
+    .accordian-content {
+        padding: 0 0;
+    }
+
+    .accordian-content p {
+        font-size: 1rem;
+    }
+
+    /* Our Services Section Styling  */
+    .our-services-section>.container-fluid {
+        padding: 20px 20px;
+    }
+
+    .our-services-content {
+        padding-right: 0;
+    }
+
+    .our-service-img-left {
+        margin-top: 20px;
+        order: 2;
+    }
+
+    .our-service-img {
+        margin-bottom: 20px;
+    }
+
+    .our-services-content p {
+        font-size: 1.05rem;
+        line-height: 25px;
+    }
+
+    .our-services-fbo-content h4 {
+        font-size: 1.3rem;
+    }
+
+    button.accordian_00 {
+        font-size: 1rem;
+    }
+
+    .accordian-content-00 p {
+        font-size: 1rem;
+    }
+
+    /* Parking Section Styling */
+    .parking-slider-section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .parking-slider-section h1 {
+        font-size: 1.65rem;
+        line-height: 35px;
+    }
+
+    .parking-para p {
+        font-size: 1rem;
+    }
+
+    /* Endorsement Section Styling */
+    .endorsement-section>.container-fluid {
+        padding: 50px 20px;
+    }
+
+    .endorsement-tagline h3 {
+        font-size: 1.25rem;
+        line-height: 35px;
+    }
+
+    .endorsement-content-column {
+        padding-left: calc(var(--bs-gutter-x) * .5);
+    }
+
+    .endorsement-title {
+        padding-top: 30px;
+        font-size: 1.75rem;
+    }
+
+    .card {
+        margin-top: 20px;
+    }
+
+    .card-image img {
+        position: relative;
+        left: auto;
+        transform: translate(0%, 0%);
+        width: 150px;
+        height: 150px;
+    }
+
+    .card>.row>.col-md-9 {
+        order: 2;
+    }
+
+    /* Footer Styling */
+    footer.container-fluid {
+        padding: 50px 20px;
+    }
+
+    .column-title h3 {
+        font-size: 1.5rem;
+        padding-left: 15px;
+    }
+
+    .listing {
+        margin-top: 20px;
+    }
+
+    .listing-00 {
+        padding-top: 25px;
+    }
+
+    .listing-00 ul {
+        padding-left: 15px;
+    }
+
+    .listing ul li,
+    .listing-00 ul li {
+        font-size: 1rem;
+    }
+
+    .listing-00 ul li button {
+        font-size: 1rem;
+    }
+
+    .listing-00 ul li>.accordian-content ul {
+        border: none;
+        padding: 0px;
+    }
+
+    footer>.row>h5 {
+        text-align: center;
+    }
+    /*NCC Management Page*/
+    h1.main-heading {
+        width: 100%;
+    }
+    h4.main-para {
+        width: 100%;
+    }
+}
